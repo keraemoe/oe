@@ -1,1 +1,70 @@
-﻿
+﻿.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+  h1 {
+    margin-top: 100px;
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 78px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #263238;
+  }
+  p {
+    margin-top: 65px;
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: #263238;
+    text-align: center;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    position: relative;
+    input {
+      background: rgba(38, 50, 56, 0.1);
+      border-radius: 10px;
+      width: 533px;
+      height: 76px;
+      display: flex;
+      align-items: center;
+      padding: 13px 350px 13px 25px;
+      border: none;
+      font-family: "Spartan";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+      color: #263238;
+    }
+    button {
+      background: #008000;
+      border-radius: 10px;
+      width: 163px;
+      height: 64px;
+      border: none;
+      position: absolute;
+      right: 6px;
+      font-family: "Spartan";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2e422e;
+      transition: 0.5s;
+    }
+  }
+}

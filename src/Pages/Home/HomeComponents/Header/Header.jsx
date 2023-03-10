@@ -1,7 +1,5 @@
 ﻿import React from "react";
 import s from "./Header.module.scss";
-import busket from "../../../../Assets/busket.png";
-import registrImg from "../../../../Assets/registrAndAuth.png";
 import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -9,6 +7,9 @@ const Header = () => {
 
   const handleRegister = () => {
     navigate("/registration");
+  };
+  const handleAuth = () => {
+    navigate("/auth");
   };
 
   const token = localStorage.getItem("token");
@@ -22,34 +23,36 @@ const Header = () => {
     <>
       <div id="container">
         <div className={s.header}>
+          <div>
+            <h1>invest</h1>
+          </div>
           <nav>
             <ul>
-              <li>
-                <Link>О нас</Link>
-              </li>
-              <li>
-                <Link to="/products">Продукция</Link>
-              </li>
-              <li>
-                <Link>Полезные статьи</Link>
-              </li>
-              <li>
-                <Link to="/contacts">Контакты</Link>
-              </li>
+              <Link to="/">
+                <li>Home</li>
+              </Link>
+              <Link to="/About">
+                <li>About</li>
+              </Link>
+              <Link to="/Features">
+                <li>Features</li>
+              </Link>
+              <Link to="/How">
+                <li>How it works</li>
+              </Link>
             </ul>
           </nav>
           <div className={s.busket}>
-            <Link to="/basket">
-              <img src={busket} alt="busket" />
-
-            </Link>
-
             {token ? (
               <span onClick={logout}>Logout</span>
             ) : (
-              <img src={registrImg} alt="img" onClick={handleRegister} />
+              <button onClick={handleAuth}>Login</button>
             )}
-            {/* <img src={languageImg} alt="language" /> */}
+            {token ? (
+              <></>
+            ) : (
+              <button onClick={handleRegister}>Registration</button>
+            )}
           </div>
         </div>
       </div>

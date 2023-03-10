@@ -1,94 +1,90 @@
 ﻿.header {
   display: flex;
+  justify-content: space-between;
+  height: 150px;
   align-items: center;
-  height: 70px;
-  margin-top: 35px;
-  justify-content: center;
+  gap: 16px;
+  h1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    color: #263238;
+  }
   nav {
     ul {
-      gap: 30px;
       display: flex;
-      list-style: none;
-      align-items: center;
-
+      gap: 40px;
       li {
-        font-family: "Istok Web";
+        list-style: none;
+        font-family: "Lato";
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 29px;
-        text-align: center;
-        color: #000000;
-
-        & a {
-          color: #000000;
-        }
+        font-size: 18px;
+        line-height: 22px;
+        color: #263238;
       }
     }
   }
   .busket {
-    min-width: 60px;
-    height: 60px;
-    // background: #ffffff;
-    // border-radius: 30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 127px;
-    // box-shadow: 1px 1px 20px 1px rgba($color: #aaaaaa, $alpha: 1);
-    gap: 30px;
     span {
+      border: 1px solid #263238;
+      margin-right: 16px;
+      border-radius: 10px;
+      width: 142px;
+      height: 64px;
+      background: #fff;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #263238;
+      align-items: center;
+      display: flex;
+      justify-content: center;
       cursor: pointer;
     }
-    span:hover {
-      transition: 0.1s;
-      text-decoration: underline;
-      color: #fdbf00;
-      font-size: 20px;
+    button:first-child {
+      border: 1px solid #263238;
+      margin-right: 16px;
+      border-radius: 10px;
+      width: 142px;
+      height: 64px;
+      background: #fff;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #263238;
     }
-
-    img {
-      cursor: pointer;
+    button:first-child:hover {
+      background: #3d3d3d;
+      transition: 0.5s;
+      color: #ffffff;
     }
-  }
-}
-
-@media screen and (max-width: 820px) {
-  .header {
-    nav {
-      ul {
-        li {
-          font-size: 15px;
-        }
-      }
+    button {
+      background: #008000;
+      border-radius: 10px;
+      width: 142px;
+      height: 64px;
+      padding: 13px 25px;
+      border: none;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
     }
-    .busket {
-      min-width: 40px;
-      height: 40px;
-      margin-left: 50px;
+    button:hover {
+      background: #2e422e;
+      transition: 0.5s;
     }
-  }
-}
-
-@media screen and (max-width: 570px) {
-  .header {
-    nav {
-      ul {
-        gap: 12px;
-        li {
-          font-size: 12px;
-          font-weight: 200;
-        }
-      }
-    }
-    .busket {
-      margin-left: 20px;
-    }
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .header {
-    display: none;
   }
 }

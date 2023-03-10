@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../Home/HomeComponents/Header/Header';
+import Company from './HomeComponents/Company/Company';
 import Hero from './HomeComponents/Hero/Hero';
+import How from './HomeComponents/How/How';
 
 
 const HomePage = () => {
@@ -8,6 +10,8 @@ const HomePage = () => {
         <>
             <Header />
             <Hero />
+            <Company />
+            <How />
         </>
     );
 };

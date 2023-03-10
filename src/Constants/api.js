@@ -1,3 +1,3 @@
-export const REGISTERAPI = "https://aika.pythonanywhere.com/register/";
+export const REGISTERAPI = "https://iimgera.pythonanywhere.com/register/";
 
-export const AUTHAPI = "https://aika.pythonanywhere.com/login/";
+export const AUTHAPI = "https://iimgera.pythonanywhere.com/login/";
