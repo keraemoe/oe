@@ -10,6 +10,7 @@ import comp3 from '../../../../Assets/comp3.png'
 import comp4 from '../../../../Assets/comp4.png'
 import comp5 from '../../../../Assets/comp5.png'
 import s from './Company.module.scss'
+import './Company.css'
 
 const Company = () => {
     return (
@@ -21,7 +22,7 @@ const Company = () => {
                         disableOnInteraction: false,
                     }}
                     slidesPerView={5}
-                    spaceBetween={30}
+                    spaceBetween={50}
                     freeMode={true}
                     modules={[FreeMode, Autoplay]}
                     className="mySwiper"

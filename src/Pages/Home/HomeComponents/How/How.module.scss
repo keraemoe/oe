@@ -1,7 +1,8 @@
 ﻿.how {
   display: flex;
   gap: 40px;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   .first {
     h1 {
       margin-top: 200px;
@@ -143,6 +144,314 @@
     align-items: center;
     img {
       margin-top: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .how {
+    .second {
+      img {
+        margin-top: 150px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .how {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    .first {
+      h1 {
+        margin-top: 200px;
+        font-family: "Spartan";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 72px;
+        display: flex;
+        align-items: center;
+        color: #263238;
+      }
+      p {
+        margin-top: 32px;
+        font-family: "Spartan";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 177%;
+        color: #263238;
+      }
+      .info {
+        .first_info {
+          margin-top: 48px;
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          .txt {
+            h1 {
+              margin: 0;
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 22px;
+              text-align: center;
+              color: #263238;
+            }
+            p {
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 180%;
+              color: #263238;
+            }
+          }
+        }
+        .second_info {
+          margin-top: 48px;
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          .txt {
+            h1 {
+              margin: 0;
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 22px;
+              text-align: center;
+              color: #263238;
+            }
+            p {
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 180%;
+              color: #263238;
+            }
+          }
+        }
+        .third_info {
+          margin-top: 48px;
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          .txt {
+            h1 {
+              margin: 0;
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 22px;
+              text-align: center;
+              color: #263238;
+            }
+            p {
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 180%;
+              color: #263238;
+            }
+          }
+        }
+        .fourth_info {
+          margin-top: 48px;
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          .txt {
+            h1 {
+              margin: 0;
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 22px;
+              text-align: center;
+              color: #263238;
+            }
+            p {
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 180%;
+              color: #263238;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .how {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px 0 20px;
+    .second {
+      img {
+        margin-top: 0;
+      }
+    }
+    .first {
+      h1 {
+        margin-top: 100px;
+        font-family: "Spartan";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 72px;
+        display: flex;
+        align-items: center;
+        color: #263238;
+      }
+      p {
+        margin-top: 10px;
+        font-family: "Spartan";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 177%;
+        color: #263238;
+      }
+      .info {
+        .first_info {
+          margin-top: 48px;
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          img {
+            width: 80px;
+            height: 80px;
+          }
+          .txt {
+            h1 {
+              margin: 0;
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 22px;
+              text-align: center;
+              color: #263238;
+            }
+            p {
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 180%;
+              color: #263238;
+            }
+          }
+        }
+        .second_info {
+          margin-top: 48px;
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          img {
+            width: 80px;
+            height: 80px;
+          }
+          .txt {
+            h1 {
+              margin: 0;
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 22px;
+              text-align: center;
+              color: #263238;
+            }
+            p {
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 180%;
+              color: #263238;
+            }
+          }
+        }
+        .third_info {
+          margin-top: 48px;
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          img {
+            width: 80px;
+            height: 80px;
+          }
+          .txt {
+            h1 {
+              margin: 0;
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 22px;
+              text-align: center;
+              color: #263238;
+            }
+            p {
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 180%;
+              color: #263238;
+            }
+          }
+        }
+        .fourth_info {
+          margin-top: 48px;
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          img {
+            width: 80px;
+            height: 80px;
+          }
+          .txt {
+            h1 {
+              margin: 0;
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 22px;
+              text-align: center;
+              color: #263238;
+            }
+            p {
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 180%;
+              color: #263238;
+            }
+          }
+        }
+      }
     }
   }
 }

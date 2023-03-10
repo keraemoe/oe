@@ -68,3 +68,56 @@
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .hero {
+    margin-bottom: 100px;
+    padding: 0 20px 0 20px;
+    h1 {
+      margin-top: 5px;
+      font-size: 50px;
+      line-height: 50px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 150%;
+    }
+    .btn {
+      input {
+        width: 380px;
+        padding: 13px 150px 13px 25px;
+      }
+      button {
+        width: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero {
+    padding: 0 20px 0 20px;
+    h1 {
+      margin-top: 5px;
+      font-size: 35px;
+      line-height: 40px;
+    }
+    p {
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 120%;
+    }
+    .btn {
+      margin-top: 20px;
+      input {
+        width: 250px;
+        padding: 13px 10px 13px 25px;
+      }
+      button {
+        width: 80px;
+        font-size: 16px;
+        height: 50px;
+      }
+    }
+  }
+}
