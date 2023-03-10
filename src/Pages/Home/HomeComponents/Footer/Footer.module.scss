@@ -1,0 +1,512 @@
+﻿#about {
+  background: rgba(242, 248, 242, 0.5);
+}
+.main_footer {
+  width: 80%;
+  margin: 0 auto;
+  .footer {
+    display: flex;
+    align-items: center;
+    height: 460px;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        img {
+        }
+        h1 {
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 25px;
+          color: #263238;
+        }
+      }
+      p {
+        margin-top: 24px;
+        font-family: "Spartan";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 177%;
+        color: #263238;
+      }
+    }
+    .center {
+      p {
+        font-family: "Spartan";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 177%;
+        color: #263238;
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        margin-top: 48px;
+        position: relative;
+        input {
+          background: rgba(38, 50, 56, 0.1);
+          border-radius: 10px;
+          width: 533px;
+          height: 76px;
+          display: flex;
+          align-items: center;
+          padding: 13px 350px 13px 25px;
+          border: none;
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 20px;
+          color: #263238;
+        }
+        button {
+          background: #008000;
+          border-radius: 10px;
+          width: 163px;
+          height: 64px;
+          border: none;
+          position: absolute;
+          right: 6px;
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 20px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+        button:hover {
+          background: #2e422e;
+          transition: 0.5s;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      gap: 100px;
+      flex-wrap: wrap;
+      .icons {
+        h1 {
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 18px;
+          color: #263238;
+          margin-bottom: 24px;
+        }
+        .soc {
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+        }
+      }
+      .number {
+        h1 {
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 18px;
+          color: #263238;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main_footer {
+    width: 80%;
+    margin: 0 auto;
+    .footer {
+      display: flex;
+      align-items: center;
+      height: 460px;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .logo {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          img {
+          }
+          h1 {
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 25px;
+            color: #263238;
+          }
+        }
+        p {
+          margin-top: 24px;
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 177%;
+          color: #263238;
+        }
+      }
+      .center {
+        p {
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 177%;
+          color: #263238;
+        }
+        .btn {
+          display: flex;
+          align-items: center;
+          margin-top: 48px;
+          position: relative;
+          input {
+            background: rgba(38, 50, 56, 0.1);
+            border-radius: 10px;
+            width: 433px;
+            height: 76px;
+            display: flex;
+            align-items: center;
+            padding: 13px 150px 13px 25px;
+            border: none;
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: #263238;
+          }
+          button {
+            background: #008000;
+            border-radius: 10px;
+            width: 163px;
+            height: 64px;
+            border: none;
+            position: absolute;
+            right: 6px;
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: #ffffff;
+            cursor: pointer;
+          }
+          button:hover {
+            background: #2e422e;
+            transition: 0.5s;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        gap: 100px;
+        flex-wrap: wrap;
+        .icons {
+          h1 {
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #263238;
+            margin-bottom: 24px;
+          }
+          .soc {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+          }
+        }
+        .number {
+          h1 {
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #263238;
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .main_footer {
+    width: 80%;
+    margin: 0 auto;
+    .footer {
+      display: flex;
+      align-items: center;
+      height: 460px;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .logo {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          img {
+          }
+          h1 {
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 25px;
+            color: #263238;
+          }
+        }
+        p {
+          margin-top: 24px;
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 177%;
+          color: #263238;
+        }
+      }
+      .center {
+        p {
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 177%;
+          color: #263238;
+        }
+        .btn {
+          display: flex;
+          align-items: center;
+          margin-top: 48px;
+          position: relative;
+          input {
+            background: rgba(38, 50, 56, 0.1);
+            border-radius: 10px;
+            width: 333px;
+            height: 76px;
+            display: flex;
+            align-items: center;
+            padding: 13px 150px 13px 25px;
+            border: none;
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: #263238;
+          }
+          button {
+            background: #008000;
+            border-radius: 10px;
+            width: 123px;
+            height: 64px;
+            border: none;
+            position: absolute;
+            right: 6px;
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: #ffffff;
+            cursor: pointer;
+          }
+          button:hover {
+            background: #2e422e;
+            transition: 0.5s;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        gap: 100px;
+        flex-wrap: wrap;
+        .icons {
+          h1 {
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #263238;
+            margin-bottom: 24px;
+          }
+          .soc {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+          }
+        }
+        .number {
+          h1 {
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #263238;
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main_footer {
+    width: 80%;
+    margin: 0 auto;
+    .footer {
+      display: flex;
+      align-items: center;
+      height: 460px;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .logo {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          img {
+          }
+          h1 {
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 25px;
+            color: #263238;
+          }
+        }
+        p {
+          margin-top: 24px;
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 177%;
+          color: #263238;
+        }
+      }
+      .center {
+        p {
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 177%;
+          color: #263238;
+        }
+        .btn {
+          display: flex;
+          align-items: center;
+          margin-top: 48px;
+          position: relative;
+          input {
+            background: rgba(38, 50, 56, 0.1);
+            border-radius: 10px;
+            width: 250px;
+            height: 76px;
+            display: flex;
+            align-items: center;
+            padding: 13px 8px 13px 105px;
+            border: none;
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: #263238;
+          }
+          button {
+            background: #008000;
+            border-radius: 10px;
+            width: 80px;
+            height: 50px;
+            border: none;
+            position: absolute;
+            left: 6px;
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: #ffffff;
+            cursor: pointer;
+          }
+          button:hover {
+            background: #2e422e;
+            transition: 0.5s;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        gap: 100px;
+        flex-wrap: wrap;
+        .icons {
+          h1 {
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #263238;
+            margin-bottom: 24px;
+          }
+          .soc {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+          }
+        }
+        .number {
+          h1 {
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #263238;
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}

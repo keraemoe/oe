@@ -1,7 +1,7 @@
 ﻿import s from './Hero.module.scss'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { Button, message } from 'antd';
+import { message } from 'antd';
 
 const Hero = () => {
     const form = useRef();
@@ -22,6 +22,9 @@ const Hero = () => {
             key,
             type: 'loading',
             content: 'Loading...',
+            style: {
+                marginTop: '100px',
+            }
         });
         setTimeout(() => {
             messageApi.open({
@@ -29,6 +32,9 @@ const Hero = () => {
                 type: 'success',
                 content: 'Loaded!',
                 duration: 2,
+                style: {
+                    marginTop: '100px',
+                }
             });
         }, 1000);
     };
