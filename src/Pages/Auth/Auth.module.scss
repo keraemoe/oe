@@ -1,0 +1,464 @@
+#authContainer {
+  padding-top: 15vh;
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+  .authWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    .authForm {
+      h1 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        color: #000000;
+      }
+      .authRoute {
+        display: flex;
+        gap: 30%;
+        margin-top: 40px;
+        h3:first-child {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 36px;
+          display: flex;
+          align-items: center;
+          color: #000000;
+          text-decoration-line: underline;
+          cursor: pointer;
+        }
+        h3:last-child {
+          cursor: pointer;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 36px;
+          display: flex;
+          align-items: center;
+          color: #000000;
+          opacity: 0.4;
+        }
+        h3:hover {
+          opacity: 1;
+        }
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 55px;
+        input {
+          border: 1px solid #cecece;
+          border-radius: 4px;
+          width: 343px;
+          height: 56px;
+          padding-left: 20px;
+        }
+        button {
+          background: #465EFD;
+          border-radius: 4px;
+          width: 343px;
+          height: 56px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 16px 24px;
+          border: none;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #ffffff;
+          &:hover {
+            background: #cf6f00;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #authContainer {
+    padding-top: 15vh;
+    display: flex;
+    .authWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      .authImg {
+        img {
+          width: 400px;
+          height: 400px;
+        }
+      }
+      .authForm {
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 36px;
+          text-align: center;
+          color: #000000;
+        }
+        .authRoute {
+          display: flex;
+          gap: 15%;
+          margin-top: 40px;
+          h3:first-child {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            cursor: pointer;
+            text-decoration-line: underline;
+          }
+          h3:last-child {
+            cursor: pointer;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            opacity: 0.4;
+          }
+          h3:hover {
+            opacity: 1;
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          margin-top: 55px;
+          input {
+            border: 1px solid #cecece;
+            border-radius: 4px;
+            width: 260px;
+            height: 56px;
+            padding-left: 20px;
+          }
+          button {
+            background: #465EFD;
+            border-radius: 4px;
+            width: 260px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 24px;
+            border: none;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #ffffff;
+            &:hover {
+              background: #cf6f00;
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #authContainer {
+    padding-top: 15vh;
+    display: flex;
+    .authWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      .authImg {
+        display: none;
+      }
+      .authForm {
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 36px;
+          text-align: center;
+          color: #000000;
+        }
+        .authRoute {
+          display: flex;
+          gap: 30%;
+          margin-top: 40px;
+          h3:first-child {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            cursor: pointer;
+            text-decoration-line: underline;
+          }
+          h3:last-child {
+            cursor: pointer;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            opacity: 0.4;
+          }
+          h3:hover {
+            opacity: 1;
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          margin-top: 55px;
+          input {
+            border: 1px solid #cecece;
+            border-radius: 4px;
+            width: 343px;
+            height: 56px;
+            padding-left: 20px;
+          }
+          button {
+            background: #465EFD;
+            border-radius: 4px;
+            width: 343px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 24px;
+            border: none;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #ffffff;
+            &:hover {
+              background: #cf6f00;
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #authContainer {
+    padding-top: 15vh;
+    display: flex;
+    .authWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      .authImg {
+        display: none;
+      }
+      .authForm {
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          line-height: 36px;
+          text-align: center;
+          color: #000000;
+        }
+        .authRoute {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 40px;
+          h3:first-child {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            cursor: pointer;
+            text-decoration-line: underline;
+          }
+          h3:last-child {
+            cursor: pointer;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            opacity: 0.4;
+          }
+          h3:hover {
+            opacity: 1;
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          margin-top: 55px;
+          input {
+            border: 1px solid #cecece;
+            border-radius: 4px;
+            width: 280px;
+            height: 56px;
+            padding-left: 20px;
+          }
+          button {
+            background: #465EFD;
+            border-radius: 4px;
+            width: 280px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 24px;
+            border: none;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #ffffff;
+            &:hover {
+              background: #cf6f00;
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #authContainer {
+    padding-top: 15vh;
+    display: flex;
+    .authWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      .authImg {
+        display: none;
+      }
+      .authForm {
+        h1 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          line-height: 36px;
+          text-align: center;
+          color: #000000;
+        }
+        .authRoute {
+          display: flex;
+          margin-top: 40px;
+          h3:first-child {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            cursor: pointer;
+            text-decoration-line: underline;
+          }
+          h3:last-child {
+            cursor: pointer;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            opacity: 0.4;
+          }
+          h3:hover {
+            opacity: 1;
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          margin-top: 55px;
+          input {
+            border: 1px solid #cecece;
+            border-radius: 4px;
+            width: 200px;
+            height: 46px;
+            padding-left: 20px;
+          }
+          button {
+            background: #465EFD;
+            border-radius: 4px;
+            width: 200px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 24px;
+            border: none;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #ffffff;
+            &:hover {
+              background: #cf6f00;
+              transition: 0.2s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
