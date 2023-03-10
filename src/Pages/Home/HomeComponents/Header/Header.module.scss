@@ -5,6 +5,10 @@
   position: fixed;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(15px);
+  box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.5);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
   z-index: 2000;
   top: 0;
 }
