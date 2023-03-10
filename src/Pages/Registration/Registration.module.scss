@@ -2,13 +2,13 @@
   padding-top: 15vh;
   display: flex;
   justify-content: center;
-  max-width: 80%;
-  margin: 0 auto;
+  margin: 0 20px 0 20px;
   .registrWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
+    margin-top: 100px;
     .registerForm {
       h1 {
         font-family: "Inter";

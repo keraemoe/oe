@@ -34,17 +34,19 @@ const Hero = () => {
     };
     return (
         <>
-            <div id='container'>
-                <div className={s.hero}>
-                    <h1>The easiest and fastest <br /> way to Invest in <br /> Agriculture</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean <br /> sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem <br /> ipsum dolor sit amet, consectetur </p>
-                    <form ref={form} onSubmit={sendEmail} className={s.btn}  >
-                        <input type="email" name="user_email" placeholder='Enter your email' />
-                        {contextHolder}
-                        <button value="send" type='submit' onClick={openMessage}>
-                            Send
-                        </button>
-                    </form>
+            <div id='home'>
+                <div id='container'>
+                    <div className={s.hero}>
+                        <h1>The easiest and fastest <br /> way to Invest in <br /> Agriculture</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean <br /> sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem <br /> ipsum dolor sit amet, consectetur </p>
+                        <form ref={form} onSubmit={sendEmail} className={s.btn}  >
+                            <input type="email" name="user_email" placeholder='Enter your email' />
+                            {contextHolder}
+                            <button value="send" type='submit' onClick={openMessage}>
+                                Send
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </>

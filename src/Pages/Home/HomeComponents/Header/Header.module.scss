@@ -1,99 +1,19 @@
-﻿.header {
+﻿#header_container {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  height: 150px;
-  align-items: center;
-  gap: 16px;
-  h1 {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 43px;
-    display: flex;
-    align-items: center;
-    color: #263238;
-  }
-  nav {
-    ul {
-      display: flex;
-      gap: 40px;
-      li {
-        list-style: none;
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: #263238;
-      }
-    }
-  }
-  .busket {
-    display: flex;
-    span {
-      border: 1px solid #263238;
-      margin-right: 16px;
-      border-radius: 10px;
-      width: 142px;
-      height: 64px;
-      background: #fff;
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
-      color: #263238;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      cursor: pointer;
-    }
-    button:first-child {
-      border: 1px solid #263238;
-      margin-right: 16px;
-      border-radius: 10px;
-      width: 142px;
-      height: 64px;
-      background: #fff;
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
-      color: #263238;
-    }
-    button:first-child:hover {
-      background: #3d3d3d;
-      transition: 0.5s;
-      color: #ffffff;
-    }
-    button {
-      background: #008000;
-      border-radius: 10px;
-      width: 142px;
-      height: 64px;
-      padding: 13px 25px;
-      border: none;
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
-      color: #ffffff;
-    }
-    button:hover {
-      background: #2e422e;
-      transition: 0.5s;
-    }
-  }
+  justify-content: center;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 2000;
+  top: 0;
 }
-
-@media screen and (max-width: 1024px) {
+.main_header {
+  width: 80%;
   .header {
     display: flex;
     justify-content: space-between;
-    height: 150px;
+    height: 80px;
     align-items: center;
     gap: 16px;
     h1 {
@@ -127,101 +47,8 @@
         border: 1px solid #263238;
         margin-right: 16px;
         border-radius: 10px;
-        width: 100px;
-        height: 50px;
-        background: #fff;
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 22px;
-        color: #263238;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-      }
-      button:first-child {
-        border: 1px solid #263238;
-        margin-right: 16px;
-        border-radius: 10px;
-        width: 100px;
-        height: 50px;
-        background: #fff;
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
-        color: #263238;
-      }
-      button:first-child:hover {
-        background: #3d3d3d;
-        transition: 0.5s;
-        color: #ffffff;
-      }
-      button {
-        background: #008000;
-        border-radius: 10px;
-        width: 100px;
-        height: 50px;
-        padding: 13px 25px;
-        border: none;
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
-        color: #ffffff;
-      }
-      button:hover {
-        background: #2e422e;
-        transition: 0.5s;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 890px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    height: 150px;
-    align-items: center;
-    gap: 16px;
-    h1 {
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 30px;
-      line-height: 43px;
-      display: flex;
-      align-items: center;
-      color: #263238;
-    }
-    nav {
-      ul {
-        display: flex;
-        gap: 20px;
-        li {
-          list-style: none;
-          font-family: "Lato";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 22px;
-          color: #263238;
-        }
-      }
-    }
-    .busket {
-      display: flex;
-      span {
-        border: 1px solid #263238;
-        margin-right: 16px;
-        border-radius: 10px;
-        width: 80px;
-        height: 50px;
+        width: 142px;
+        height: 64px;
         background: #fff;
         font-family: "Lato";
         font-style: normal;
@@ -238,14 +65,14 @@
         border: 1px solid #263238;
         margin-right: 16px;
         border-radius: 10px;
-        width: 100px;
-        height: 40px;
+        width: 142px;
+        height: 64px;
         background: #fff;
         font-family: "Lato";
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
-        line-height: 15px;
+        font-size: 18px;
+        line-height: 22px;
         color: #263238;
       }
       button:first-child:hover {
@@ -256,14 +83,14 @@
       button {
         background: #008000;
         border-radius: 10px;
-        width: 100px;
-        height: 40px;
+        width: 142px;
+        height: 64px;
         padding: 13px 25px;
         border: none;
         font-family: "Lato";
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 22px;
         color: #ffffff;
       }
@@ -274,20 +101,213 @@
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .main_header {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      align-items: center;
+      gap: 16px;
+      h1 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 43px;
+        display: flex;
+        align-items: center;
+        color: #263238;
+      }
+      nav {
+        ul {
+          display: flex;
+          gap: 40px;
+          li {
+            list-style: none;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #263238;
+          }
+        }
+      }
+      .busket {
+        display: flex;
+        span {
+          border: 1px solid #263238;
+          margin-right: 16px;
+          border-radius: 10px;
+          width: 100px;
+          height: 50px;
+          background: #fff;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          color: #263238;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+        }
+        button:first-child {
+          border: 1px solid #263238;
+          margin-right: 16px;
+          border-radius: 10px;
+          width: 100px;
+          height: 50px;
+          background: #fff;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          color: #263238;
+        }
+        button:first-child:hover {
+          background: #3d3d3d;
+          transition: 0.5s;
+          color: #ffffff;
+        }
+        button {
+          background: #008000;
+          border-radius: 10px;
+          width: 100px;
+          height: 50px;
+          padding: 13px 25px;
+          border: none;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          color: #ffffff;
+        }
+        button:hover {
+          background: #2e422e;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .main_header {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      align-items: center;
+      gap: 16px;
+      h1 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 43px;
+        display: flex;
+        align-items: center;
+        color: #263238;
+      }
+      nav {
+        ul {
+          display: flex;
+          gap: 20px;
+          li {
+            list-style: none;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #263238;
+          }
+        }
+      }
+      .busket {
+        display: flex;
+        span {
+          border: 1px solid #263238;
+          margin-right: 16px;
+          border-radius: 10px;
+          width: 80px;
+          height: 50px;
+          background: #fff;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          color: #263238;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+        }
+        button:first-child {
+          border: 1px solid #263238;
+          margin-right: 16px;
+          border-radius: 10px;
+          width: 100px;
+          height: 40px;
+          background: #fff;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 15px;
+          color: #263238;
+        }
+        button:first-child:hover {
+          background: #3d3d3d;
+          transition: 0.5s;
+          color: #ffffff;
+        }
+        button {
+          background: #008000;
+          border-radius: 10px;
+          width: 100px;
+          height: 40px;
+          padding: 13px 25px;
+          border: none;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          color: #ffffff;
+        }
+        button:hover {
+          background: #2e422e;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
-  .header {
-    nav {
-      display: none;
-    }
-    .busket {
-      display: none;
+  .main_header {
+    .header {
+      nav {
+        display: none;
+      }
+      .busket {
+        display: none;
+      }
     }
   }
 }
 
 @media screen and (max-width: 425px) {
-  .header {
-    padding: 0 20px 0 20px;
+  .main_header {
+    .header {
+      padding: 0 20px 0 20px;
+    }
   }
 }
