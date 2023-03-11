@@ -22,8 +22,10 @@ const Auth = () => {
         username,
         password,
       });
-      const token = response.data.token;
-      localStorage.setItem("token", token);
+      const access = response.data.access;
+      const refresh = response.data.refresh;
+      localStorage.setItem("access", access);
+      localStorage.setItem("refresh", refresh);
 
       if (response.status === 200 || 201) {
         return navigate("/");

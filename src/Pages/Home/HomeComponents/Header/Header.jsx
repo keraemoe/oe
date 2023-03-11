@@ -18,10 +18,11 @@ const Header = () => {
     navigate("/")
   }
 
-  const token = localStorage.getItem("token");
+  const token = localStorage.getItem("access");
 
   const logout = () => {
-    localStorage.removeItem("token");
+    localStorage.removeItem("refresh");
+    localStorage.removeItem("access");
     navigate("/registration");
   };
   const [showNav, setShowNav] = useState(false);

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import s from "./Registration.module.scss";
 import RegisterBackground from "../../Assets/registrBackground.png";
-import { REGISTERAPI } from "../../Constants/api";
+import { AUTHAPI, REGISTERAPI } from "../../Constants/api";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Header from "../Home/HomeComponents/Header/Header";
+import { message } from 'antd';
 
 
 const Registration = () => {
@@ -13,6 +14,41 @@ const Registration = () => {
   const [email, setEmail] = useState("");
 
   const navigate = useNavigate();
+  const handleAuth = () => {
+    navigate("/auth");
+  };
+
+  const [messageApi, contextHolder] = message.useMessage();
+  const error = () => {
+    messageApi.open({
+      type: 'error',
+      content: 'This username is already taked',
+      style: {
+        marginTop: '100px',
+      }
+    });
+  };
+
+  const AuthUsers = async () => {
+    try {
+      const response = await axios.post(AUTHAPI, {
+        username,
+        password,
+      });
+      if (response.status === 200 || 201) {
+        const access = response.data.access;
+        const refresh = response.data.refresh;
+
+        localStorage.setItem("access", access);
+        localStorage.setItem("refresh", refresh);
+        navigate("/");
+      } else if (!response.status) {
+        console.log("error");
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   const postUsers = async (e) => {
     e.preventDefault();
@@ -22,20 +58,16 @@ const Registration = () => {
         password,
         email,
       });
-      console.log("Success:", response.data);
       if (response.status === 200 || 201) {
-        return navigate("/auth");
-      } else if (response.status === 404 && 400 && 500) {
-        console.log("error");
+        // console.log("Success:", response.data);
+        // navigate("/auth");
+        AuthUsers()
       }
-    } catch (error) {
-      console.error("Error:", error);
+    } catch (e) {
+      error()
     }
   };
 
-  const handleAuth = () => {
-    navigate("/auth");
-  };
 
   return (
     <>
@@ -83,7 +115,8 @@ const Registration = () => {
                 value={phone_number}
                 onChange={(e) => setPhone_number(e.target.value)}
               /> */}
-              <button>Регистрация</button>
+              {contextHolder}
+              <button type="submit" >Регистрация</button>
             </form>
           </div>
         </div>
