@@ -366,7 +366,7 @@
 @media screen and (max-width: 425px) {
   #header_container {
     justify-content: space-between;
-    max-width: 130%;
+    width: 130% !important;
   }
   .main_header {
     .header {
