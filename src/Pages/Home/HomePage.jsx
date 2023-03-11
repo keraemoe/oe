@@ -5,7 +5,9 @@ import Features from './HomeComponents/Features/Features';
 import Footer from './HomeComponents/Footer/Footer';
 import Hero from './HomeComponents/Hero/Hero';
 import How from './HomeComponents/How/How';
-
+import { UpOutlined } from '@ant-design/icons';
+import { FloatButton } from 'antd';
+import './HomePage.css'
 
 const HomePage = () => {
     return (
@@ -16,6 +18,17 @@ const HomePage = () => {
             <How />
             <Features />
             <Footer />
+            <a href="#">
+                <FloatButton
+                    shape="circle"
+                    type="primary"
+                    style={{
+                        backgroundColor: '#008000',
+                        right: 20,
+                    }}
+                    icon={<UpOutlined />}
+                />
+            </a>
         </>
     );
 };

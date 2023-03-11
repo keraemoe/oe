@@ -1,6 +1,8 @@
-﻿import React from "react";
+﻿import React, { useState } from "react";
 import s from "./Header.module.scss";
 import { Link, useNavigate } from "react-router-dom";
+import Sidebar from "../Sidebar/Sidebar";
+
 
 const Header = () => {
   const navigate = useNavigate();
@@ -12,12 +14,17 @@ const Header = () => {
     navigate("/auth");
   };
 
+  const handleHome = () => {
+    navigate("/")
+  }
+
   const token = localStorage.getItem("token");
 
   const logout = () => {
     localStorage.removeItem("token");
     navigate("/registration");
   };
+  const [showNav, setShowNav] = useState(false);
 
   return (
     <>
@@ -25,11 +32,17 @@ const Header = () => {
         <div className={s.main_header}>
           <div className={s.header}>
             <div>
-              <h1>invest</h1>
+              <h1 onClick={handleHome}>invest</h1>
             </div>
             <nav>
+
+
               <ul>
-                <a href="#"><li>Home</li></a>
+                <Link to="/">
+                  <li>
+                    Home
+                  </li>
+                </Link>
                 <a href="#about"><li>About</li></a>
                 <a href="#features"><li>Features</li></a>
                 <a href="#how"><li>How it works</li></a>
@@ -47,9 +60,23 @@ const Header = () => {
                 <button onClick={handleRegister}>Sign Up</button>
               )}
             </div>
+            <div className={s.burger}>
+              <label className={s.label} htmlFor="check">
+                <input
+                  type="checkbox"
+                  id="check"
+                  className={s.check}
+                  onClick={() => setShowNav(!showNav)}
+                />
+                <span className={s.span}></span>
+                <span className={s.span}></span>
+                <span className={s.span}></span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
+      {showNav && <Sidebar show={showNav} setShowNav={setShowNav} />}
     </>
   );
 };
