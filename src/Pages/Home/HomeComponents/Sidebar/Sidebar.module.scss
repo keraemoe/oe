@@ -1,6 +1,6 @@
 .sidenav {
   width: 100%;
-  background: green;
+  background: #008000;
   position: fixed;
   height: 100%;
   left: -100%;
@@ -157,4 +157,33 @@
 
 .line:last-child {
   transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 425px) {
+  .sidenav {
+    .closeBurger {
+      margin-left: 60%;
+    }
+    ul {
+      li {
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .sidenav {
+    .closeBurger {
+      margin-left: 50%;
+    }
+    ul {
+      li {
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
