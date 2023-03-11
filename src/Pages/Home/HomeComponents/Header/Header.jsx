@@ -36,17 +36,15 @@ const Header = () => {
               <h1 onClick={handleHome}>invest</h1>
             </div>
             <nav>
-
-
               <ul>
                 <Link to="/">
                   <li>
                     Home
                   </li>
                 </Link>
-                <a href="#about"><li>About</li></a>
-                <a href="#features"><li>Features</li></a>
                 <a href="#how"><li>How it works</li></a>
+                <a href="#features"><li>Features</li></a>
+                <a href="#about"><li>About</li></a>
               </ul>
             </nav>
             <div className={s.busket}>
