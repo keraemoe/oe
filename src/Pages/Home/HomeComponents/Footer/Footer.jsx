@@ -96,7 +96,7 @@ const Footer = () => {
                             </div>
                             <div className={s.number}>
                                 <h1>Call us</h1>
-                                <span>+2349123456789</span>
+                                <span>+6666666666</span>
                             </div>
                         </div>
                     </div>
