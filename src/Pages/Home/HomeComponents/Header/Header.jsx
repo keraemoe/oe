@@ -58,14 +58,14 @@ const Header = () => {
             </nav>
             <div className={s.busket}>
               {token ? (
-                <span onClick={logout}>Выйти</span>
+                <span onClick={logout}>Log out</span>
               ) : (
-                <button onClick={handleAuth}>Войти</button>
+                <button onClick={handleAuth}>Sign In</button>
               )}
               {token ? (
                 <></>
               ) : (
-                <button onClick={handleRegister}></button>
+                <button onClick={handleRegister}>Sign Up</button>
               )}
               {token ? (
                 <Link to='/profile'>
