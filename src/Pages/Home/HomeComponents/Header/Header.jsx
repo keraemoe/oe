@@ -28,12 +28,6 @@ const Header = () => {
   };
   const [showNav, setShowNav] = useState(false);
 
-  const avatar = [
-    {
-      id: 1,
-      img: ''
-    }
-  ]
   return (
     <>
       <div id={s.header_container}>
@@ -63,10 +57,8 @@ const Header = () => {
               )}
               {token ? (
                 <Link to='/profile'>
-                  {avatar.map((ava) => (
-                    // <img src={ava.img} alt="profile" />
-                    <Avatar className={s.ava} icon={<UserOutlined />} />
-                  ))}
+                  {/* <img src={ava.img} alt="profile" /> */}
+                  <Avatar className={s.ava} icon={<UserOutlined />} />
                 </Link>
               ) : (
                 <></>
