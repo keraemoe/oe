@@ -29,6 +29,20 @@
   flex-direction: column;
 }
 
+li:last-child {
+  color: black;
+  text-decoration: none;
+
+  font-size: 1.8rem;
+
+  display: block;
+  font-family: "Montserrat";
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: 85px;
+}
+
 .sidenav > ul > li > a {
   color: black;
   font-size: 16px;

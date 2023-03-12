@@ -2,8 +2,25 @@ import React from "react";
 import s from "./Sidebar.module.scss";
 import cl from "classnames";
 import { motion } from "framer-motion";
+import { Link, useNavigate } from "react-router-dom";
 
 const Sidebar = ({ show, setShowNav }) => {
+
+  const navigate = useNavigate()
+
+
+
+  const token = localStorage.getItem("access")
+
+  const logout = () => {
+    localStorage.removeItem("access")
+    navigate("/auth")
+  }
+
+
+
+
+
   return (
     <motion.div
       initial={{
@@ -57,8 +74,8 @@ const Sidebar = ({ show, setShowNav }) => {
           transition={{ delay: 0.2, duration: 1.5 }}
           whileHover={{ scale: 1.1, transition: "0.4s" }}
         >
-          <a href="#about" onClick={() => setShowNav(false)}>
-            About
+          <a href="#how" onClick={() => setShowNav(false)}>
+            How it works
           </a>
         </motion.li>
         <motion.li
@@ -77,10 +94,29 @@ const Sidebar = ({ show, setShowNav }) => {
           transition={{ delay: 0.2, duration: 1.2 }}
           whileHover={{ scale: 1.1, transition: "0" }}
         >
-          <a href="#how" onClick={() => setShowNav(false)}>
-            How it works
+          <a href="#about" onClick={() => setShowNav(false)}>
+            About
           </a>
         </motion.li>
+        {
+          token ? (
+            <>
+              <motion.li>
+                <Link to="/profile" onClick={() => setShowNav(false)}>
+                  Profile
+                </Link>
+              </motion.li>
+              <motion.li onClick={logout}>
+                logout
+              </motion.li>
+            </>
+          ) :
+            (
+              <></>
+            )
+        }
+
+
       </ul>
     </motion.div>
   );

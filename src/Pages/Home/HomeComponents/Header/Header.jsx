@@ -2,7 +2,8 @@
 import s from "./Header.module.scss";
 import { Link, useNavigate } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
-
+import { UserOutlined } from '@ant-design/icons';
+import { Avatar, Space } from 'antd';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -27,21 +28,23 @@ const Header = () => {
   };
   const [showNav, setShowNav] = useState(false);
 
+  const avatar = [
+    {
+      id: 1,
+      img: ''
+    }
+  ]
   return (
     <>
       <div id={s.header_container}>
         <div className={s.main_header}>
           <div className={s.header}>
             <div>
-              <h1 onClick={handleHome}>invest</h1>
+              <h1 onClick={handleHome}>InvestInUs</h1>
             </div>
             <nav>
               <ul>
-                <Link to="/">
-                  <li>
-                    Home
-                  </li>
-                </Link>
+                <a href="#"><li>Home</li></a>
                 <a href="#how"><li>How it works</li></a>
                 <a href="#features"><li>Features</li></a>
                 <a href="#about"><li>About</li></a>
@@ -57,6 +60,16 @@ const Header = () => {
                 <></>
               ) : (
                 <button onClick={handleRegister}>Sign Up</button>
+              )}
+              {token ? (
+                <Link to='/profile'>
+                  {avatar.map((ava) => (
+                    // <img src={ava.img} alt="profile" />
+                    <Avatar className={s.ava} icon={<UserOutlined />} />
+                  ))}
+                </Link>
+              ) : (
+                <></>
               )}
             </div>
             <div className={s.burger}>

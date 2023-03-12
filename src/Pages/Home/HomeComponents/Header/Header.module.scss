@@ -51,6 +51,9 @@
     }
     .busket {
       display: flex;
+      .ava {
+        border: none;
+      }
       span {
         border: 1px solid #263238;
         margin-right: 16px;

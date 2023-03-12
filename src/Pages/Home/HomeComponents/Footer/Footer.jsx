@@ -71,7 +71,7 @@ const Footer = () => {
                                 {logo.map((logs) => (
                                     <img src={logs.img} alt="" />
                                 ))}
-                                <h1>FarmVest</h1>
+                                <h1>InvestInUs</h1>
                             </div>
                             <p>High level experience in web design <br /> and development knowledge, <br /> producing quality work.</p>
                         </div>
