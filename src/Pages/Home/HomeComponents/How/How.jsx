@@ -19,8 +19,8 @@ const How = () => {
                             <div className={s.first_info}>
                                 <img src={icon1} alt="" />
                                 <div className={s.txt}>
-                                    <h1>Download Invest</h1>
-                                    <p>Start by downloading FarmVest app <br />
+                                    <h1>Download InvestInUs</h1>
+                                    <p>Start by downloading InvestInUs app <br />
                                         on your Android or IOS</p>
                                 </div>
                             </div>
@@ -28,7 +28,7 @@ const How = () => {
                                 <img src={icon2} alt="" />
                                 <div className={s.txt}>
                                     <h1>Create account</h1>
-                                    <p>Start by downloading FarmVest app <br />
+                                    <p>Start by downloading InvestInUs app <br />
                                         on your Android or IOS</p>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@ const How = () => {
                                 <img src={icon3} alt="" />
                                 <div className={s.txt}>
                                     <h1>Link your bank account</h1>
-                                    <p>Start by downloading FarmVest app <br />
+                                    <p>Start by downloading InvestInUs app <br />
                                         on your Android or IOS</p>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@ const How = () => {
                                 <img src={icon4} alt="" />
                                 <div className={s.txt}>
                                     <h1>Start Investing</h1>
-                                    <p>Start by downloading FarmVest app <br />
+                                    <p>Start by downloading InvestInUs app <br />
                                         on your Android or IOS</p>
                                 </div>
                             </div>

@@ -1,9 +1,11 @@
-﻿import React, { useState } from "react";
+﻿import React, { useState, useEffect } from "react";
 import s from "./Header.module.scss";
 import { Link, useNavigate } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
 import { UserOutlined } from '@ant-design/icons';
-import { Avatar, Space } from 'antd';
+import { Avatar } from 'antd';
+import axios from "axios";
+import { PROFILE } from "../../../../Constants/api";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -28,6 +30,16 @@ const Header = () => {
   };
   const [showNav, setShowNav] = useState(false);
 
+  const getProfile = async () => {
+    const res = await axios.get(PROFILE)
+    setProfile(res.data)
+  }
+
+  useEffect(() => {
+    getProfile()
+  }, [])
+
+  const [profile, setProfile] = useState([])
   return (
     <>
       <div id={s.header_container}>
@@ -57,8 +69,9 @@ const Header = () => {
               )}
               {token ? (
                 <Link to='/profile'>
-                  {/* <img src={ava.img} alt="profile" /> */}
-                  <Avatar className={s.ava} icon={<UserOutlined />} />
+                  {profile.map((prof) => (
+                    <Avatar className={s.ava} icon={<UserOutlined />} />
+                  ))}
                 </Link>
               ) : (
                 <></>

@@ -22,10 +22,6 @@ const Profile = () => {
         getProfile()
     }, [])
 
-
-
-
-
     return (
         <>
             <Header />
@@ -38,9 +34,6 @@ const Profile = () => {
                         <Descriptions title={`${prof.first_name} ${prof.last_name}`}>
                             <Descriptions.Item label="Имя пользователя">{prof.user}</Descriptions.Item>
                             <Descriptions.Item label="Сфера">{prof.sphere}</Descriptions.Item>
-                            <Descriptions.Item label="Аддрес">
-                                Kyrgyzstan, Bishkek, Ibraimova 115/1 .str
-                            </Descriptions.Item>
                             <Descriptions.Item label="Контактная информация">
                                 {prof.contact_info}
                             </Descriptions.Item>

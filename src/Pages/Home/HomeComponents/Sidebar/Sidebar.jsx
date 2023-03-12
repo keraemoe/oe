@@ -8,18 +8,12 @@ const Sidebar = ({ show, setShowNav }) => {
 
   const navigate = useNavigate()
 
-
-
   const token = localStorage.getItem("access")
 
   const logout = () => {
     localStorage.removeItem("access")
     navigate("/auth")
   }
-
-
-
-
 
   return (
     <motion.div
@@ -107,7 +101,7 @@ const Sidebar = ({ show, setShowNav }) => {
                 </Link>
               </motion.li>
               <motion.li onClick={logout}>
-                logout
+                Log Out
               </motion.li>
             </>
           ) :

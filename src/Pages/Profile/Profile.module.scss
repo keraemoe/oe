@@ -1,10 +1,11 @@
 ﻿.container {
   max-width: 1440px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 250px;
 }
 
 .user {
+  height: 400px;
   margin: 50px 63px 90px 63px;
   padding: 20px;
   border-radius: 50px;
@@ -30,4 +31,10 @@
   font-size: 35.4513px;
   line-height: 53px;
   color: #404040;
+}
+
+@media screen and (max-width: 425px) {
+  .user {
+    margin: 50px 20px 90px 20px;
+  }
 }
