@@ -43,13 +43,13 @@ const Hero = () => {
             <div id='home'>
                 <div id='container'>
                     <div className={s.hero}>
-                        <h1>The easiest and fastest <br /> way to Invest in <br /> Agriculture</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean <br /> sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem <br /> ipsum dolor sit amet, consectetur </p>
+                        <h1>Инвестируйте в нас, чтобы <br /> улучшить свое будущее</h1>
+                        <p>Кыргызская Республика традиционно преуспевает в сельскохозяйственном секторе. Однако есть и другие отрасли, которые обладают <br /> огромным потенциалом развития. Гидроэнергетика, туризм и обработка текстиля среди них.</p>
                         <form ref={form} onSubmit={sendEmail} className={s.btn}  >
-                            <input type="email" name="user_email" placeholder='Enter your email' />
+                            <input type="email" name="user_email" placeholder='Введти свою почту' />
                             {contextHolder}
                             <button value="send" type='submit' onClick={openMessage}>
-                                Send
+                                Отправить
                             </button>
                         </form>
                     </div>

@@ -50,22 +50,22 @@ const Header = () => {
             </div>
             <nav>
               <ul>
-                <a href="#"><li>Home</li></a>
-                <a href="#how"><li>How it works</li></a>
-                <a href="#features"><li>Features</li></a>
-                <a href="#about"><li>About</li></a>
+                <a href="#"><li>Домой</li></a>
+                <a href="#how"><li>Как это работает?</li></a>
+                <a href="#features"><li>Функции</li></a>
+                <a href="#about"><li>О нас</li></a>
               </ul>
             </nav>
             <div className={s.busket}>
               {token ? (
-                <span onClick={logout}>Log Out</span>
+                <span onClick={logout}>Выйти</span>
               ) : (
-                <button onClick={handleAuth}>Sign In</button>
+                <button onClick={handleAuth}>Войти</button>
               )}
               {token ? (
                 <></>
               ) : (
-                <button onClick={handleRegister}>Sign Up</button>
+                <button onClick={handleRegister}></button>
               )}
               {token ? (
                 <Link to='/profile'>
